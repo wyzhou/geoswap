@@ -1,0 +1,189 @@
+Script started on Sat Sep 11 13:28:05 2010
+bash-3.2$ pwd
+/Users/pnm/geoswap
+bash-3.2$ pwdexitrake routes-T | grep route[C[C[C[C[C[C[C[C[C[Cpwd[Krake -T | grep route[9Proutes[7Pexitrake routes[7Pexit[1Ppwd[Kpwdexitrake routes-T | grep route[C[C[C[C[C[C[C[C[C[Cpwd[Kheroku opengit push heroku master[C[C[C[C[C[C[C[C[C[Cpwd[Kheroku create[C[C[C[C[C[C[C[C[C[Cgit push heroku master[C[C[C[C[C[C[C[C[C[Cpwd[K[wdpwdgit push heroku master[C[C[C[C[C[C[C[C[C[C[9Pheroku create[C[C[C[C[C[C[C[C[C[Cpwd[Kgit push heroku master[C[C[C[C[C[C[C[C[C[C[11Pheroku openpwd[Krake -T | grep route[9Proutes[7Pexit[1Ppwd[Kpwd[K[K[Krails cono[Ksole
+Loading development environment (Rails 3.0.0)
+ruby-1.9.2-p0 > l[KLaction[K[K[K[K[K[Kocation.all
+ => [#<Location id: 1, name: nil, lat: nil, lng: nil, created_at: "2010-09-11 21:55:49", updated_at: "2010-09-11 21:55:49">, #<Location id: 3, name: "Honolulu", lat: nil, lng: nil, created_at: "2010-09-11 22:00:07", updated_at: "2010-09-11 22:00:07">, #<Location id: 4, name: "Minneapolis", lat: #<BigDecimal:18863cc,'0.34E1',8(8)>, lng: #<BigDecimal:1886340,'0.24E1',8(8)>, created_at: "2010-09-11 22:01:21", updated_at: "2010-09-11 22:01:21">] 
+ruby-1.9.2-p0 > l = Location.all.first
+ => #<Location id: 1, name: nil, lat: nil, lng: nil, created_at: "2010-09-11 21:55:49", updated_at: "2010-09-11 21:55:49"> 
+ruby-1.9.2-p0 > l.check_ins
+ => [] 
+ruby-1.9.2-p0 > e[Kre;l[K[K;p[K[Kload!
+Reloading...
+ => true 
+ruby-1.9.2-p0 > CheckIn.create([K[K[K[K[K[K[K[K[K[K[K[K[K[K[K.[Kl.check_ins.create
+ => #<CheckIn id: 1, status: nil, location_id: 1, created_at: "2010-09-11 23:32:18", updated_at: "2010-09-11 23:32:18"> 
+ruby-1.9.2-p0 > cat config.ru
+NameError: undefined local variable or method `config' for main:Object
+	from (irb):6
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands/console.rb:44:in `start'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands/console.rb:8:in `start'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p0 > pwd
+NameError: undefined local variable or method `pwd' for main:Object
+	from (irb):7
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands/console.rb:44:in `start'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands/console.rb:8:in `start'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p0 > ex[K[Kl.check_ins.first
+ => #<CheckIn id: 1, status: nil, location_id: 1, created_at: "2010-09-11 23:32:18", updated_at: "2010-09-11 23:32:18"> 
+ruby-1.9.2-p0 > l.check)[K_ins.create
+ => #<CheckIn id: 2, status: nil, location_id: 1, created_at: "2010-09-11 23:35:47", updated_at: "2010-09-11 23:35:47"> 
+ruby-1.9.2-p0 > l.check_ins.create[K[K[K[K[K[Ksecond
+ => #<CheckIn id: 2, status: nil, location_id: 1, created_at: "2010-09-11 23:35:47", updated_at: "2010-09-11 23:35:47"> 
+ruby-1.9.2-p0 > l.check_ins.second[K[K[K[K[K[Kthird
+ => nil 
+ruby-1.9.2-p0 > l.check_ins.third[K[K[K[K[Kten
+NoMethodError: undefined method `ten' for #<Class:0x186f370>
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/base.rb:1016:in `method_missing'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/associations/association_collection.rb:443:in `block in method_missing'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/base.rb:1128:in `with_scope'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/associations/association_proxy.rb:203:in `with_scope'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/associations/association_collection.rb:439:in `method_missing'
+	from (irb):12
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands/console.rb:44:in `start'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands/console.rb:8:in `start'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p0 > l.check_ins.tenth
+NoMethodError: undefined method `tenth' for #<Class:0x186f370>
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/base.rb:1016:in `method_missing'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/associations/association_collection.rb:443:in `block in method_missing'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/base.rb:1128:in `with_scope'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/associations/association_proxy.rb:203:in `with_scope'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/associations/association_collection.rb:439:in `method_missing'
+	from (irb):13
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands/console.rb:44:in `start'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands/console.rb:8:in `start'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p0 > l.check_ins.tenth[K[K[K[K[Kforth[K[K[Krth
+NoMethodError: undefined method `forth' for #<Class:0x186f370>
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/base.rb:1016:in `method_missing'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/associations/association_collection.rb:443:in `block in method_missing'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/base.rb:1128:in `with_scope'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/associations/association_proxy.rb:203:in `with_scope'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/associations/association_collection.rb:439:in `method_missing'
+	from (irb):14
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands/console.rb:44:in `start'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands/console.rb:8:in `start'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p0 > l.check_ins.forth[K[K[K[K[Keach {|ci| i[Kci.pu[K[K[K[K[Kputs ci.name}}[K}[K}[K}[Ks}t}a}t}u}s}
+
+
+ => [#<CheckIn id: 1, status: nil, location_id: 1, created_at: "2010-09-11 23:32:18", updated_at: "2010-09-11 23:32:18">, #<CheckIn id: 2, status: nil, location_id: 1, created_at: "2010-09-11 23:35:47", updated_at: "2010-09-11 23:35:47">] 
+ruby-1.9.2-p0 > l.check_ins.each {|ci| puts ci.status}[26Dforth[K[5Dtenth[Khird[5Dsecond[6Dcreate("[K:status => 'okay')
+ => #<CheckIn id: 3, status: "okay", location_id: 1, created_at: "2010-09-11 23:37:35", updated_at: "2010-09-11 23:37:35"> 
+ruby-1.9.2-p0 > l.check_ins.create(:status => 'okay')[25Deach {|ci| puts ci.status}[26Dforth[K[5Deach {|ci| puts ci.status}
+
+
+okay
+ => [#<CheckIn id: 1, status: nil, location_id: 1, created_at: "2010-09-11 23:32:18", updated_at: "2010-09-11 23:32:18">, #<CheckIn id: 2, status: nil, location_id: 1, created_at: "2010-09-11 23:35:47", updated_at: "2010-09-11 23:35:47">, #<CheckIn id: 3, status: "okay", location_id: 1, created_at: "2010-09-11 23:37:35", updated_at: "2010-09-11 23:37:35">] 
+ruby-1.9.2-p0 > l.check_ins.each {|ci| puts ci.status}[26Dcreate(:status => 'okay')[K[25Deach {|ci| puts ci.status}[26Dforth[K[5Dtenth[Khird[5Dsecond[6Dcreate[6Dfirst[K.status = 'learning rails"[K'
+ => "learning rails" 
+ruby-1.9.2-p0 > l.check_ins.first.status = 'learning rails'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+ => #<CheckIn id: 1, status: "learning rails", location_id: 1, created_at: "2010-09-11 23:32:18", updated_at: "2010-09-11 23:32:18"> 
+ruby-1.9.2-p0 > l.check_ins.first[K[K[K[K[Ksecond.sat[Kt[K[Ktatus = 'Learning L[KPerls'
+ => "Learning Perls" 
+ruby-1.9.2-p0 > l.check_ins.second.status = 'Learning Perls'[32Dfirst[K[Kt.status = 'learning rails'[31Deach {|ci| puts ci.status}[K
+learning rails
+Learning Perls
+okay
+ => [#<CheckIn id: 1, status: "learning rails", location_id: 1, created_at: "2010-09-11 23:32:18", updated_at: "2010-09-11 23:32:18">, #<CheckIn id: 2, status: "Learning Perls", location_id: 1, created_at: "2010-09-11 23:35:47", updated_at: "2010-09-11 23:35:47">, #<CheckIn id: 3, status: "okay", location_id: 1, created_at: "2010-09-11 23:37:35", updated_at: "2010-09-11 23:37:35">] 
+ruby-1.9.2-p0 > l.[K[KLocation.find.all
+ActiveRecord::RecordNotFound: Couldn't find Location without an ID
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/relation/finder_methods.rb:279:in `find_with_ids'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/relation/finder_methods.rb:107:in `find'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/activerecord-3.0.0/lib/active_record/base.rb:439:in `find'
+	from (irb):22
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands/console.rb:44:in `start'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands/console.rb:8:in `start'
+	from /Users/pnm/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p0 > Location.find.all[K[K[K[K[K[K[K[Ka;;[K[Kll
+ => [#<Location id: 1, name: nil, lat: nil, lng: nil, created_at: "2010-09-11 21:55:49", updated_at: "2010-09-11 21:55:49">, #<Location id: 3, name: "Honolulu", lat: nil, lng: nil, created_at: "2010-09-11 22:00:07", updated_at: "2010-09-11 22:00:07">, #<Location id: 4, name: "Minneapolis", lat: #<BigDecimal:1b28288,'0.34E1',8(8)>, lng: #<BigDecimal:1b28210,'0.24E1',8(8)>, created_at: "2010-09-11 22:01:21", updated_at: "2010-09-11 22:01:21">] 
+ruby-1.9.2-p0 > Location.all[K[K[Kf[Kfirst.check_ins
+ => [#<CheckIn id: 3, status: "okay", location_id: 1, created_at: "2010-09-11 23:37:35", updated_at: "2010-09-11 23:37:35">, #<CheckIn id: 2, status: nil, location_id: 1, created_at: "2010-09-11 23:35:47", updated_at: "2010-09-11 23:35:47">, #<CheckIn id: 1, status: nil, location_id: 1, created_at: "2010-09-11 23:32:18", updated_at: "2010-09-11 23:32:18">] 
+ruby-1.9.2-p0 > reload!
+Reloading...
+ => true 
+ruby-1.9.2-p0 > La[Kocation.create(:name => 'UH', :lat => 21.29, :lng => -157.82)
+ => #<Location id: 5, name: "UH", lat: #<BigDecimal:1855dbc,'0.2129E2',8(8)>, lng: #<BigDecimal:1855c90,'-0.15782E3',8(12)>, created_at: "2010-09-11 23:48:49", updated_at: "2010-09-11 23:48:49"> 
+ruby-1.9.2-p0 > Location.create(:name => 'UH', :lat => 21.29, :lng => -157.82).82[P,[4h8[4l,[4h5[4l,[4h7[4l,[4h8[4l,[4h8[4l,, :lng => -157.828)4)8)5)
+ => #<Location id: 6, name: "UH", lat: #<BigDecimal:149de68,'0.21285788E2',12(12)>, lng: #<BigDecimal:149dc24,'-0.157828485E3',12(16)>, created_at: "2010-09-11 23:50:08", updated_at: "2010-09-11 23:50:08"> 
+ruby-1.9.2-p0 > Location.find(6).name = 'AlaWai[K[K[K Wai Park'
+ => "Ala Wai Park" 
+ruby-1.9.2-p0 > Location.find(6).name = 'Ala Wai Park'me = 'Ala Wai Park'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[4hl[4lL[4h [4lL[4h=[4lL
+ => #<Location id: 6, name: "UH", lat: #<BigDecimal:1468984,'0.21285788E2',12(12)>, lng: #<BigDecimal:1468754,'-0.157828485E3',12(16)>, created_at: "2010-09-11 23:50:08", updated_at: "2010-09-11 23:50:08"> 
+ruby-1.9.2-p0 > l.name = 'Ala Wai Park'
+ => "Ala Wai Park" 
+ruby-1.9.2-p0 > l.save
+ => true 
+ruby-1.9.2-p0 > Location.nw[K[Kfind(5)
+ => #<Location id: 5, name: "UH", lat: #<BigDecimal:142a1fc,'0.2129E2',8(8)>, lng: #<BigDecimal:1429eb4,'-0.15782E3',8(12)>, created_at: "2010-09-11 23:48:49", updated_at: "2010-09-11 23:48:49"> 
+ruby-1.9.2-p0 > l = Location.find(5)
+ => #<Location id: 5, name: "UH", lat: #<BigDecimal:141ab80,'0.2129E2',8(8)>, lng: #<BigDecimal:141a9c8,'-0.15782E3',8(12)>, created_at: "2010-09-11 23:48:49", updated_at: "2010-09-11 23:48:49"> 
+ruby-1.9.2-p0 > l.lat[K[K[K[K[KLocation.[K[K[K[K[K[K[K[K[Kl.lat = 21.297404
+ => 21.297404 
+ruby-1.9.2-p0 > l.lng = -157.817541
+ => -157.817541 
+ruby-1.9.2-p0 > l.save
+ => true 
+ruby-1.9.2-p0 > l[KLocation.fin[K[K[K[Ka[K/[K.all
+ => [#<Location id: 1, name: nil, lat: nil, lng: nil, created_at: "2010-09-11 21:55:49", updated_at: "2010-09-11 21:55:49">, #<Location id: 3, name: "Honolulu", lat: nil, lng: nil, created_at: "2010-09-11 22:00:07", updated_at: "2010-09-11 22:00:07">, #<Location id: 4, name: "Minneapolis", lat: #<BigDecimal:7d760c,'0.34E1',8(8)>, lng: #<BigDecimal:7d74a4,'0.24E1',8(8)>, created_at: "2010-09-11 22:01:21", updated_at: "2010-09-11 22:01:21">, #<Location id: 6, name: "Ala Wai Park", lat: #<BigDecimal:7d66f8,'0.21285788E2',12(12)>, lng: #<BigDecimal:7d65a4,'-0.157828485E3',12(16)>, created_at: "2010-09-11 23:50:08", updated_at: "2010-09-11 23:51:50">, #<Location id: 5, name: "UH", lat: #<BigDecimal:7d4934,'0.21297404E2',12(12)>, lng: #<BigDecimal:7d454c,'-0.157817541E3',12(16)>, created_at: "2010-09-11 23:48:49", updated_at: "2010-09-11 23:53:51">] 
+ruby-1.9.2-p0 > Location.near_b[K[K[K[K[K[Kwithin(21.2972746,-157.8173839, 0.5)
+ => [#<Location id: 5, name: "UH", lat: #<BigDecimal:724430,'0.21297404E2',12(12)>, lng: #<BigDecimal:72423c,'-0.157817541E3',12(16)>, created_at: "2010-09-11 23:48:49", updated_at: "2010-09-11 23:53:51">] 
+ruby-1.9.2-p0 > Location.within(21.2972746,-157.8173839, 0.5))[K8)
+ => [#<Location id: 5, name: "UH", lat: #<BigDecimal:705d78,'0.21297404E2',12(12)>, lng: #<BigDecimal:705a94,'-0.157817541E3',12(16)>, created_at: "2010-09-11 23:48:49", updated_at: "2010-09-11 23:53:51">] 
+ruby-1.9.2-p0 > Location.within(21.2972746,-157.8173839, 0.8))[K)[K)[K5)\))[K
+ => [#<Location id: 6, name: "Ala Wai Park", lat: #<BigDecimal:18716c,'0.21285788E2',12(12)>, lng: #<BigDecimal:186ec4,'-0.157828485E3',12(16)>, created_at: "2010-09-11 23:50:08", updated_at: "2010-09-11 23:51:50">, #<Location id: 5, name: "UH", lat: #<BigDecimal:18338c,'0.21297404E2',12(12)>, lng: #<BigDecimal:182fb8,'-0.157817541E3',12(16)>, created_at: "2010-09-11 23:48:49", updated_at: "2010-09-11 23:53:51">] 
+ruby-1.9.2-p0 > Location.within(21.2972746,-157.8173839, 5))[K1)
+ => [#<Location id: 5, name: "UH", lat: #<BigDecimal:1696bc,'0.21297404E2',12(12)>, lng: #<BigDecimal:1691d0,'-0.157817541E3',12(16)>, created_at: "2010-09-11 23:48:49", updated_at: "2010-09-11 23:53:51">] 
+ruby-1.9.2-p0 > Location.within(21.2972746,-157.8173839, 1))[K2)
+ => [#<Location id: 6, name: "Ala Wai Park", lat: #<BigDecimal:1512ec,'0.21285788E2',12(12)>, lng: #<BigDecimal:150ab8,'-0.157828485E3',12(16)>, created_at: "2010-09-11 23:50:08", updated_at: "2010-09-11 23:51:50">, #<Location id: 5, name: "UH", lat: #<BigDecimal:14d0d4,'0.21297404E2',12(12)>, lng: #<BigDecimal:14cc60,'-0.157817541E3',12(16)>, created_at: "2010-09-11 23:48:49", updated_at: "2010-09-11 23:53:51">] 
+ruby-1.9.2-p0 > 
+ruby-1.9.2-p0 >   
+ruby-1.9.2-p0 >   
+ruby-1.9.2-p0 >   
+ruby-1.9.2-p0 >   
+ruby-1.9.2-p0 >   
+ruby-1.9.2-p0 >   La c[K[Kocation.all
+ => [#<Location id: 1, name: nil, lat: nil, lng: nil, created_at: "2010-09-11 21:55:49", updated_at: "2010-09-11 21:55:49">, #<Location id: 3, name: "Honolulu", lat: nil, lng: nil, created_at: "2010-09-11 22:00:07", updated_at: "2010-09-11 22:00:07">, #<Location id: 4, name: "Minneapolis", lat: #<BigDecimal:125034,'0.34E1',8(8)>, lng: #<BigDecimal:124bc0,'0.24E1',8(8)>, created_at: "2010-09-11 22:01:21", updated_at: "2010-09-11 22:01:21">, #<Location id: 6, name: "Ala Wai Park", lat: #<BigDecimal:1202a0,'0.21285788E2',12(12)>, lng: #<BigDecimal:11ff58,'-0.157828485E3',12(16)>, created_at: "2010-09-11 23:50:08", updated_at: "2010-09-11 23:51:50">, #<Location id: 5, name: "UH", lat: #<BigDecimal:11d6e0,'0.21297404E2',12(12)>, lng: #<BigDecimal:11d5b4,'-0.157817541E3',12(16)>, created_at: "2010-09-11 23:48:49", updated_at: "2010-09-11 23:53:51">] 
+ruby-1.9.2-p0 > Location.allwithin(21.2972746,-157.8173839, 2)
+ => [#<Location id: 6, name: "Ala Wai Park", lat: #<BigDecimal:9d4cc,'0.21285788E2',12(12)>, lng: #<BigDecimal:9cfa4,'-0.157828485E3',12(16)>, created_at: "2010-09-11 23:50:08", updated_at: "2010-09-11 23:51:50">, #<Location id: 5, name: "UH", lat: #<BigDecimal:164130,'0.21297404E2',12(12)>, lng: #<BigDecimal:1691d0,'-0.157817541E3',12(16)>, created_at: "2010-09-11 23:48:49", updated_at: "2010-09-11 23:53:51">] 
+ruby-1.9.2-p0 > Lact[K[K[Kocation.all
+ => [#<Location id: 1, name: nil, lat: nil, lng: nil, created_at: "2010-09-11 21:55:49", updated_at: "2010-09-11 21:55:49">, #<Location id: 3, name: "Honolulu", lat: nil, lng: nil, created_at: "2010-09-11 22:00:07", updated_at: "2010-09-11 22:00:07">, #<Location id: 4, name: "Minneapolis", lat: #<BigDecimal:1b73ee0,'0.34E1',8(8)>, lng: #<BigDecimal:1b761f4,'0.24E1',8(8)>, created_at: "2010-09-11 22:01:21", updated_at: "2010-09-11 22:01:21">, #<Location id: 6, name: "Ala Wai Park", lat: #<BigDecimal:1b9d86c,'0.21285788E2',12(12)>, lng: #<BigDecimal:1ba2150,'-0.157828485E3',12(16)>, created_at: "2010-09-11 23:50:08", updated_at: "2010-09-11 23:51:50">, #<Location id: 5, name: "UH", lat: #<BigDecimal:1bc7d38,'0.21297404E2',12(12)>, lng: #<BigDecimal:1bc7cac,'-0.157817541E3',12(16)>, created_at: "2010-09-11 23:48:49", updated_at: "2010-09-11 23:53:51">] 
+ruby-1.9.2-p0 > Locate[Kion.ds[Kestroy(1)
+ => #<Location id: 1, name: nil, lat: nil, lng: nil, created_at: "2010-09-11 21:55:49", updated_at: "2010-09-11 21:55:49"> 
+ruby-1.9.2-p0 > Location.destroy(1))[K3)
+ => #<Location id: 3, name: "Honolulu", lat: nil, lng: nil, created_at: "2010-09-11 22:00:07", updated_at: "2010-09-11 22:00:07"> 
+ruby-1.9.2-p0 > Location.destroy(3))[K4)
+ => #<Location id: 4, name: "Minneapolis", lat: #<BigDecimal:1bab750,'0.34E1',8(8)>, lng: #<BigDecimal:1bab5e8,'0.24E1',8(8)>, created_at: "2010-09-11 22:01:21", updated_at: "2010-09-11 22:01:21"> 
+ruby-1.9.2-p0 > lLocation.destroy(4)3)1)[10Dall[K
+ => [#<Location id: 6, name: "Ala Wai Park", lat: #<BigDecimal:1ba72e0,'0.21285788E2',12(12)>, lng: #<BigDecimal:1ba7254,'-0.157828485E3',12(16)>, created_at: "2010-09-11 23:50:08", updated_at: "2010-09-11 23:51:50">, #<Location id: 5, name: "UH", lat: #<BigDecimal:1ba6674,'0.21297404E2',12(12)>, lng: #<BigDecimal:1ba6598,'-0.157817541E3',12(16)>, created_at: "2010-09-11 23:48:49", updated_at: "2010-09-11 23:53:51">] 
+ruby-1.9.2-p0 > Location.alldestroy(4)3)1)[10Dall[K[K[K[Kall.count
+ => 2 
+ruby-1.9.2-p0 > pwd[K[K[Ke[Kexit
+bash-3.2$ pq[Kwd
+/Users/pnm/geoswap
+bash-3.2$ cd app/
+bash-3.2$ cd views/
+bash-3.2$ cd locations/
+bash-3.2$ ls
+bash-3.2$ touch near_y[Kby.html
+bash-3.2$ ls
+near_by.html
+bash-3.2$ lstouch near_by.html.erb
+bash-3.2$ rm near_by.html
+bash-3.2$ 
+bash-3.2$ 
